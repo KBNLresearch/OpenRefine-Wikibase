@@ -10,7 +10,7 @@
         "site_iri": "https://kbtestwikibase.wikibase.cloud/entity/",
         "maxlag": 5,
         "properties": {
-            "instance_of": "P1",
+            "instance_of": "P3",
             "subclass_of": "P2"
         }
     },
