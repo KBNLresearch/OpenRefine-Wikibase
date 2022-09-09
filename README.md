@@ -7,6 +7,7 @@ Allowing
 
 ## OpenRefine documentation
 * Connecting OpenRefine to a Wikibase instance : https://docs.openrefine.org/manual/wikibase/configuration
+* Example manifests: https://github.com/OpenRefine/wikibase-manifests
 * Reconciling with Wikibase: https://docs.openrefine.org/manual/wikibase/reconciling
 
 ## Wikibases of the KB 
