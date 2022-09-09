@@ -1,0 +1,23 @@
+{
+    "version": "1.0",
+    "mediawiki": {
+        "name": "OpenRefine KBTestWikibaseCloud",
+        "root": "https://kbtestwikibase.wikibase.cloud/wiki/",
+        "main_page": "https://kbtestwikibase.wikibase.cloud/wiki/Main_Page",
+        "api": "https://kbtestwikibase.wikibase.cloud/w/api.php"
+    },
+    "wikibase": {
+        "site_iri": "https://kbtestwikibase.wikibase.cloud/entity/",
+        "maxlag": 5,
+        "properties": {
+            "instance_of": "P1",
+            "subclass_of": "P2"
+        }
+    },
+    "oauth": {
+        "registration_page": "https://kbtestwikibase.wikibase.cloud/wiki/Special:OAuthConsumerRegistration/propose"
+    },
+    "reconciliation": {
+        "endpoint": "https://kbtestwikibase.wikibase.reconci.link/${lang}/api"
+    }
+}
