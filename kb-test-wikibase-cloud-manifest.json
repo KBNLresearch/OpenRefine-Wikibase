@@ -13,7 +13,7 @@
 		"tag": "Edit using OpenRefine-${version}",
 		"properties": {
 			"instance_of": "P3",
-			"subclass_of": "P2"
+			"subclass_of": "P2"}
 		},
 		"oauth": {
 			"registration_page": "https://kbtestwikibase.wikibase.cloud/wiki/Special:OAuthConsumerRegistration/propose"
@@ -29,4 +29,3 @@
             }
         }
     }
-}
