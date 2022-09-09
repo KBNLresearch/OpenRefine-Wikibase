@@ -26,5 +26,6 @@
         "site_iri": "https://kbtestwikibase.wikibase.cloud/entity/",
         "reconciliation_endpoint": "https://kbtestwikibasecloud.reconci.link/${lang}/api",
         "mediawiki_api": "https://kbtestwikibase.wikibase.cloud/w/api.php"
+      }  
    }
 }
