@@ -27,5 +27,5 @@ Once you have a working reconciliation service for your Wikibase instance, you c
 * Example manifests: https://github.com/OpenRefine/wikibase-manifests
 
 **KB specific**
-* A manifest for connecting OpenRefine to *https://kbtestwikibase.wikibase.cloud* is available on [kb-test-wikibase-cloud-manifest.json](kb-test-wikibase-cloud-manifest.json).
+* A (basic) manifest for connecting OpenRefine to *https://kbtestwikibase.wikibase.cloud* is available on [kb-test-wikibase-cloud-manifest.json](kb-test-wikibase-cloud-manifest.json).
 * For making this work for other WB instances, change *https://kbtestwikibase.wikibase.cloud* into the URL of the specific KB Wikibase you are dealing with, and don't forget to specify the base URL of the KB reconcilation service (g. http://localhost:8000 in the above example).
