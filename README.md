@@ -12,7 +12,7 @@ Allowing
 ## Setting up a reconciliation service for a Wikibase instance
 
 **General**
-* Installing the reconciliation service : https://openrefine-wikibase.readthedocs.io/en/latest/
+* Installing the reconciliation service : https://openrefine-wikibase.readthedocs.io/en/latest/install.html
 * You will also need to install two extensions in your Wikibase: [UniversalLanguageSelector](https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:UniversalLanguageSelector) and (optionally) [CirrusSearch](https://www.mediawiki.org/wiki/Extension:CirrusSearch).
 
 **KB specific**
