@@ -6,8 +6,8 @@ Allowing
 * uploading data to KB Wikibases via OpenRefine
  
 ## Wikibases of the KB 
-* https://kbtestwikibase.wikibase.cloud/wiki/Main_Page (external test/prototyping WB-instance)
-* http://kbga-wiki-test.westeurope.azurecontainer.io/wiki/Main_Page (internal test WB-instance)
+* https://kbtestwikibase.wikibase.cloud/wiki/Main_Page (informal test/prototyping WB instance, not part of the KB IT infrastructure)
+* http://kbga-wiki-test.westeurope.azurecontainer.io/wiki/Main_Page (formal test WB instance, part of the IT-infra of the KB)
 
 ## Setting up a reconciliation service for a Wikibase instance
 
