@@ -20,12 +20,12 @@
     "registration_page": "https://kbtestwikibase.wikibase.cloud/wiki/Special:OAuthConsumerRegistration/propose"
   },
   "reconciliation": {
-    "endpoint": "https://kbtestwikibase.wikibase.reconci.link/${lang}/api"
+    "endpoint": "<base URL of KB reconciliation service>/${lang}/api"
   },
   "entity_types": {
     "item": {
       "site_iri": "https://kbtestwikibase.wikibase.cloud/entity/",
-      "reconciliation_endpoint": "https://kbtestwikibasecloud.reconci.link/${lang}/api",
+      "reconciliation_endpoint": "<base URL of KB reconciliation service>/${lang}/api",
       "mediawiki_api": "https://kbtestwikibase.wikibase.cloud/w/api.php"
     }
   }
