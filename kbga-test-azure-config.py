@@ -127,6 +127,7 @@ type_property_path = 'P1'
 property_for_this_type_property = None
 
 # Optional prefix in front of properties in SPARQL-like property paths
+# Let op: deze prefix in aangepast, was eerst wdt:
 wdt_prefix = 'kbwdt:'
 #PREFIX kbwdt: <http://kbga-wiki-test.westeurope.azurecontainer.io/prop/direct/>
 #PREFIX kbwd: <http://kbga-wiki-test.westeurope.azurecontainer.io/entity/>
@@ -139,7 +140,7 @@ wdt_prefix = 'kbwdt:'
 sparql_query_to_fetch_subclasses = """
 SELECT ?child WHERE { ?child kbwdt:P2* kbwd:$qid }
 """
-# Let op: In deze query zijn de prefixes wd: en wdt: vervangen door kbwd: en kbwdt:
+# Let op: In deze query zijn de prefixes wd: en wdt: vervangen door kbwd: resp kbwdt:
 
 # Sparql query used to fetch all the properties which store unique external identifiers
 # http://kbga-wdqs-test.westeurope.azurecontainer.io/#SELECT%20%3Fpid%20WHERE%20%7B%20%3Fpid%20wikibase%3ApropertyType%20wikibase%3AExternalId%20%7D
