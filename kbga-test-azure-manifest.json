@@ -1,0 +1,32 @@
+{
+  "version": "1.0",
+  "mediawiki": {
+    "name": "OpenRefine KBTestWikibaseCloud",
+    "root": "https://kbtestwikibase.wikibase.cloud/wiki/",
+    "main_page": "https://kbtestwikibase.wikibase.cloud/wiki/Main_Page",
+    "api": "https://kbtestwikibase.wikibase.cloud/w/api.php"
+  },
+  "wikibase": {
+    "site_iri": "https://kbtestwikibase.wikibase.cloud/entity/",
+    "maxlag": 5,
+    "max_edits_per_minute": 60,
+    "tag": "Edit using OpenRefine-${version}",
+    "properties": {
+      "instance_of": "P3",
+      "subclass_of": "P2"
+    }
+  },
+  "oauth": {
+    "registration_page": "https://kbtestwikibase.wikibase.cloud/wiki/Special:OAuthConsumerRegistration/propose"
+  },
+  "reconciliation": {
+    "endpoint": "<base URL of KB reconciliation service>/${lang}/api"
+  },
+  "entity_types": {
+    "item": {
+      "site_iri": "https://kbtestwikibase.wikibase.cloud/entity/",
+      "reconciliation_endpoint": "<base URL of KB reconciliation service>/${lang}/api",
+      "mediawiki_api": "https://kbtestwikibase.wikibase.cloud/w/api.php"
+    }
+  }
+}
