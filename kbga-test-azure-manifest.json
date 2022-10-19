@@ -10,7 +10,7 @@
     "site_iri": "http://kbga-wiki-test.westeurope.azurecontainer.io:80/entity/",
     "maxlag": 5,
     "max_edits_per_minute": 60,
-    "tag": "Edit using OpenRefine-${version}",
+    "tag": "OpenRefine-${version}",
     "properties": {
       "instance_of": "P1",
       "subclass_of": "P2"
