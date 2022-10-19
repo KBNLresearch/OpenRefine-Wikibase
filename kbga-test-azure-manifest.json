@@ -20,12 +20,12 @@
     "registration_page": "http://kbga-wiki-test.westeurope.azurecontainer.io/wiki/Special:OAuthConsumerRegistration/propose"
   },
   "reconciliation": {
-    "endpoint": "http://XXXXXXXXXXXXXXX.westeurope.azurecontainer.io/${lang}/api"
+    "endpoint": "http://kbga-recon-test.westeurope.azurecontainer.io:8000/${lang}/api"
   },
   "entity_types": {
     "item": {
       "site_iri": "http://kbga-wiki-test.westeurope.azurecontainer.io/entity/",
-      "reconciliation_endpoint": "http://XXXXXXXXXXXXXXXXX.westeurope.azurecontainer.io/${lang}/api",
+      "reconciliation_endpoint": "http://kbga-recon-test.westeurope.azurecontainer.io:8000/${lang}/api",
       "mediawiki_api": "http://kbga-wiki-test.westeurope.azurecontainer.io/w/api.php"
     }
   }
