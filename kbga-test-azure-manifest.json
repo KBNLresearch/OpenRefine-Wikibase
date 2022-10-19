@@ -7,7 +7,7 @@
     "api": "http://kbga-wiki-test.westeurope.azurecontainer.io/w/api.php"
   },
   "wikibase": {
-    "site_iri": "http://kbga-wiki-test.westeurope.azurecontainer.io/entity/",
+    "site_iri": "http://kbga-wiki-test.westeurope.azurecontainer.io:80/entity/",
     "maxlag": 5,
     "max_edits_per_minute": 60,
     "tag": "Edit using OpenRefine-${version}",
