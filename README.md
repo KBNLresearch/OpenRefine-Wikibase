@@ -1,7 +1,7 @@
 # OpenRefine-Wikibase
 Files for interaction between OpenRefine and KB Wikibases. 
 
-Purpose: reconciling and uploading of data to Wikibases of the KB, using Openfine 
+Purpose: reconciling and uploading data to Wikibases of the KB, using Openfine 
  
 ## Wikibases of the KB 
 * https://kbtestwikibase.wikibase.cloud/wiki/Main_Page (informal test/prototyping WB instance, not part of the KB IT infrastructure)
