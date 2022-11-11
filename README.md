@@ -32,3 +32,18 @@ Once you have a working reconciliation service for your Wikibase instance, you c
 * A (basic) manifest for connecting OpenRefine to https://kbtestwikibase.wikibase.cloud is available on [kb-test-wikibase-cloud-manifest.json](kb-test-wikibase-cloud-manifest.json).
 * For making this work for other WB instances, change *https://kbtestwikibase.wikibase.cloud* into the URL of the specific KB Wikibase you are dealing with, and don't forget to specify the base URL of the KB reconcilation service (g. http://localhost:8000 in the above example).
   * [kbga-test-azure-manifest.json](kbga-test-azure-manifest.json ) is the (basic) manifest for connecting OpenRefine to http://kbga-wiki-test.westeurope.azurecontainer.io
+  
+** Special:Tags
+When using OpenRefine to write to your Wikibase, make sure that (using the Admin account) you add the tags “openrefine-3.x” (x=3,4,5,6,7,..) to the Special:Tags page of your Wikibase, depending on which versions (v3.3, 3.4.. 3.7) of OpenRefine you want to allow to write to your wikibase. See for instance https://www.wikidata.org/wiki/Special:Tags 
+<image scr="images/special-tags.jpg">
+
+ 
+
+Als je die labels nog niet in je WB toegevoegd hebt, dan geeft OR (in dit geval v3.7) de volgende foutmeldingen
+
+ 
+
+Je moet er dan ook voor zorgen dat in de manifest.json die je aan OR toevoegt (https://github.com/KBNLresearch/OpenRefine-Wikibase/blob/main/kbga-test-azure-manifest.json), je in het veld “tag” precies de waarde "openrefine-${version}" hebt staan, overeenkomstig de syntax die je in de Special:Tags hebt opgenomen
+
+ 
+
