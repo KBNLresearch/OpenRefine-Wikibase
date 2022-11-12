@@ -59,3 +59,6 @@ In your Wikibase some pages may be [(semi)protected](https://www.wikidata.org/wi
 
 To allow autoconfirmed users to write to your Wikibase, make sure (using an Admin login) you set the page protection to the semiprotected level "Allow only autoconfirmed users", via calls such as https://www.wikidata.org/w/index.php?title=Q34086&action=unprotect 
 
+## Licensing
+The contents of this page are released into the public domain under the [Creative Commons Zero v1.0 Universal](LICENSE) and can therefore be reused freely and openly. Attribution (*KB, national library of the Netherlands*) is not required, but still appreciated.
+
