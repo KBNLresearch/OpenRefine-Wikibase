@@ -10,7 +10,7 @@
     "site_iri": "https://kbtestwikibase.wikibase.cloud/entity/",
     "maxlag": 5,
     "max_edits_per_minute": 60,
-    "tag": "Edit using OpenRefine-${version}",
+    "tag": "openRefine-${version}",
     "properties": {
       "instance_of": "P3",
       "subclass_of": "P2"
