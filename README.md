@@ -4,8 +4,8 @@ Files for interaction between OpenRefine and KB Wikibases.
 Purpose: reconciling and uploading data to Wikibases of the KB, using Openfine 
  
 ## Wikibases of the KB 
-* https://kbtestwikibase.wikibase.cloud/wiki/Main_Page (informal test/prototyping WB instance, not part of the KB IT infrastructure)
-* http://kbga-wiki-test.westeurope.azurecontainer.io/wiki/Main_Page (formal test WB instance, part of the IT-infra of the KB)
+* https://kbtestwikibase.wikibase.cloud/wiki/Main_Page (non-official sandbox/prototyping WB instance, not part of the KB IT infrastructure)
+* http://www.localhost:81 (internal, formal test WB instance, part of the IT-infra of the KB)
 
 ## Setting up a reconciliation service for your Wikibase instance
 
@@ -19,7 +19,7 @@ Purpose: reconciling and uploading data to Wikibases of the KB, using Openfine
   * This will expose the recon service at http://localhost:8000 (as specified in the *this_host* parameter).
   * This file has been succesfully tested with a service run on a local Windows10 machine. See [these two](https://twitter.com/ookgezellig/status/1569720757009403905) [tweets](https://twitter.com/ookgezellig/status/1569732763678277638). 
 * For making this work for other WB instances, change *https://kbtestwikibase.wikibase.cloud* into the URL of the specific KB Wikibase you are dealing with, and don't forget to change the *this_host*, *wikibase_name*, the *fallback_image_url* and other relevent parameters accordingly.
-  * [kbga-test-azure-config.py](kbga-test-azure-config.py) is the custom configuration file for http://kbga-wiki-test.westeurope.azurecontainer.io. This file must be renamed to config.py when used in the actual Docker setup.
+  * [localhost81.py](localhost81.py) is the custom configuration file for http://www.localhost:81. This file must be renamed to config.py when used in the actual Docker setup.
 
 ## Connecting OpenRefine to your Wikibase instance
 Once you have a working reconciliation service for your Wikibase instance, you can connect OpenRefine to it. All you need is a so-called manifest for that instance, which provides some metadata and links required for the connection to work.
@@ -31,7 +31,7 @@ Once you have a working reconciliation service for your Wikibase instance, you c
 **KB specific**
 * A (basic) manifest for connecting OpenRefine to https://kbtestwikibase.wikibase.cloud is available on [kb-test-wikibase-cloud-manifest.json](kb-test-wikibase-cloud-manifest.json).
 * For making this work for other WB instances, change *https://kbtestwikibase.wikibase.cloud* into the URL of the specific KB Wikibase you are dealing with, and don't forget to specify the base URL of the KB reconcilation service (g. http://localhost:8000 in the above example).
-  * [kbga-test-azure-manifest.json](kbga-test-azure-manifest.json ) is the (basic) manifest for connecting OpenRefine to http://kbga-wiki-test.westeurope.azurecontainer.io
+  * [localhost81-manifest.json](localhost81-manifest.json ) is the (basic) manifest for connecting OpenRefine to http://www.localhost:81
 
 ## Configuration of your Wikibase instance
 
@@ -47,7 +47,7 @@ If you don't add these tags, OpenRefine will give errors like these:
  
 <image src="images/tags-error.jpg" width="80%">
  
-You must also make sure that in the [manifest.json](https://github.com/KBNLresearch/OpenRefine-Wikibase/blob/main/kbga-test-azure-manifest.json) you add to OpenRefine, the value of the “tag” field is exactly *openrefine-${version}*, corresponding to the syntax used in the *Special:Tags* page.
+You must also make sure that in the [manifest.json](https://github.com/KBNLresearch/OpenRefine-Wikibase/blob/main/localhost81-manifest.json) you add to OpenRefine, the value of the “tag” field is exactly *openrefine-${version}*, corresponding to the syntax used in the *Special:Tags* page.
 
 <image src="images/manifest-tag.png">
  
