@@ -19,7 +19,7 @@ Purpose: reconciling and uploading data to Wikibases of the KB, using Openfine
   * This will expose the recon service at http://localhost:8000 (as specified in the *this_host* parameter).
   * This file has been succesfully tested with a service run on a local Windows10 machine. See [these two](https://twitter.com/ookgezellig/status/1569720757009403905) [tweets](https://twitter.com/ookgezellig/status/1569732763678277638). 
 * For making this work for other WB instances, change *https://kbtestwikibase.wikibase.cloud* into the URL of the specific KB Wikibase you are dealing with, and don't forget to change the *this_host*, *wikibase_name*, the *fallback_image_url* and other relevent parameters accordingly.
-  * [localhost81.py](localhost81.py) is the custom configuration file for http://www.localhost:81. This file must be renamed to config.py when used in the actual Docker setup.
+  * [localhost81-config.py](localhost81-config.py) is the custom configuration file for http://www.localhost:81. This file must be renamed to config.py when used in the actual Docker setup.
 
 ## Connecting OpenRefine to your Wikibase instance
 Once you have a working reconciliation service for your Wikibase instance, you can connect OpenRefine to it. All you need is a so-called manifest for that instance, which provides some metadata and links required for the connection to work.
@@ -31,7 +31,7 @@ Once you have a working reconciliation service for your Wikibase instance, you c
 **KB specific**
 * A (basic) manifest for connecting OpenRefine to https://kbtestwikibase.wikibase.cloud is available on [kb-test-wikibase-cloud-manifest.json](kb-test-wikibase-cloud-manifest.json).
 * For making this work for other WB instances, change *https://kbtestwikibase.wikibase.cloud* into the URL of the specific KB Wikibase you are dealing with, and don't forget to specify the base URL of the KB reconcilation service (g. http://localhost:8000 in the above example).
-  * [localhost81-manifest.json](localhost81-manifest.json ) is the (basic) manifest for connecting OpenRefine to http://www.localhost:81
+  * [localhost81-manifest.json](localhost81-manifest.json) is the (basic) manifest for connecting OpenRefine to http://www.localhost:81
 
 ## Configuration of your Wikibase instance
 
