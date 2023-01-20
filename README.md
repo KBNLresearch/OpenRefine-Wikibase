@@ -20,6 +20,7 @@ Purpose: reconciling and uploading data to Wikibases of the KB, using Openfine
   * This file has been succesfully tested with a service run on a local Windows10 machine. See [these two](https://twitter.com/ookgezellig/status/1569720757009403905) [tweets](https://twitter.com/ookgezellig/status/1569732763678277638). 
 * For making this work for other WB instances, change *https://kbtestwikibase.wikibase.cloud* into the URL of the specific KB Wikibase you are dealing with, and don't forget to change the *this_host*, *wikibase_name*, the *fallback_image_url* and other relevent parameters accordingly.
   * [localhost81-config.py](localhost81-config.py) is the custom configuration file for http://www.localhost:81. This file must be renamed to config.py when used in the actual Docker setup.
+* Extensions [UniversalLanguageSelector](https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:UniversalLanguageSelector) and [CirrusSearch](https://www.mediawiki.org/wiki/Extension:CirrusSearch) are enabled in this Wikibase, see http://www.localhost:81/wiki/Special:Version
 
 ## Connecting OpenRefine to your Wikibase instance
 Once you have a working reconciliation service for your Wikibase instance, you can connect OpenRefine to it. All you need is a so-called manifest for that instance, which provides some metadata and links required for the connection to work.
