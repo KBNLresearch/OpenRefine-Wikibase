@@ -24,7 +24,7 @@
   },
   "entity_types": {
     "item": {
-      "site_iri": "http://www.localhost:81/entity/",
+      "site_iri": "http://wikibase/entity/",
       "reconciliation_endpoint": "http://www.localhost:8000/${lang}/api",
       "mediawiki_api": "http://www.localhost:81/w/api.php"
     }
