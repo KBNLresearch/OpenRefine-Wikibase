@@ -7,7 +7,7 @@
     "api": "http://www.localhost:81/w/api.php"
   },
   "wikibase": {
-    "site_iri": "http://www.localhost:81/entity/",
+    "site_iri": "http://wikibase/entity/",
     "maxlag": 5,
     "max_edits_per_minute": 60,
     "tag": "openrefine-${version}",
