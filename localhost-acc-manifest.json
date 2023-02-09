@@ -1,7 +1,7 @@
 {
   "version": "1.0",
   "mediawiki": {
-    "name": "KB Acceptatie Wikibase",
+    "name": "KB ACCeptatie Wikibase",
     "root": "http://www.localhost:82/wiki/",
     "main_page": "http://www.localhost:82/wiki/Main_Page",
     "api": "http://www.localhost:82/w/api.php"
