@@ -1,0 +1,32 @@
+{
+  "version": "1.0",
+  "mediawiki": {
+    "name": "KB Acceptatie Wikibase",
+    "root": "http://www.localhost:82/wiki/",
+    "main_page": "http://www.localhost:82/wiki/Main_Page",
+    "api": "http://www.localhost:82/w/api.php"
+  },
+  "wikibase": {
+    "site_iri": "http://www.localhost:82/entity/",
+    "maxlag": 5,
+    "max_edits_per_minute": 60,
+    "tag": "openrefine-${version}",
+    "properties": {
+      "instance_of": "P1",
+      "subclass_of": "P2"
+    }
+  },
+  "oauth": {
+    "registration_page": "http://www.localhost:82/wiki/Special:OAuthConsumerRegistration/propose"
+  },
+  "reconciliation": {
+    "endpoint": "http://www.localhost:8001/${lang}/api"
+  },
+  "entity_types": {
+    "item": {
+      "site_iri": "http://www.localhost:82/entity/",
+      "reconciliation_endpoint": "http://www.localhost:8001/${lang}/api",
+      "mediawiki_api": "http://www.localhost:82/w/api.php"
+    }
+  }
+}
