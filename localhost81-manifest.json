@@ -1,7 +1,7 @@
 {
   "version": "1.0",
   "mediawiki": {
-    "name": "OpenRefine KB Test Wikibase",
+    "name": "OpenRefine KB TEST Wikibase",
     "root": "http://www.localhost:81/wiki/",
     "main_page": "http://www.localhost:81/wiki/Main_Page",
     "api": "http://www.localhost:81/w/api.php"
