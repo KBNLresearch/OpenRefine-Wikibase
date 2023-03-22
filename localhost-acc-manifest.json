@@ -2,12 +2,12 @@
   "version": "1.0",
   "mediawiki": {
     "name": "KB ACCeptatie Wikibase",
-    "root": "http://localhost:8083/wiki/",
-    "main_page": "http://localhost:8083/wiki/Main_Page",
-    "api": "http://localhost:8083/w/api.php"
+    "root": "http://localhost:83/wiki/",
+    "main_page": "http://localhost:83/wiki/Main_Page",
+    "api": "http://localhost:83/w/api.php"
   },
   "wikibase": {
-    "site_iri": "http://localhost:8083/entity/",
+    "site_iri": "http://localhost:83/entity/",
     "maxlag": 5,
     "max_edits_per_minute": 60,
     "tag": "openrefine-${version}",
@@ -17,16 +17,16 @@
     }
   },
   "oauth": {
-    "registration_page": "http://localhost:8083/wiki/Special:OAuthConsumerRegistration/propose"
+    "registration_page": "http://localhost:83/wiki/Special:OAuthConsumerRegistration/propose"
   },
   "reconciliation": {
     "endpoint": "http://localhost:8002/${lang}/api"
   },
   "entity_types": {
     "item": {
-      "site_iri": "http://localhost:8083/entity/",
+      "site_iri": "http://localhost:83/entity/",
       "reconciliation_endpoint": "http://localhost:8002/${lang}/api",
-      "mediawiki_api": "http://localhost:8083/w/api.php"
+      "mediawiki_api": "http://localhost:83/w/api.php"
     }
   }
 }
