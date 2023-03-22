@@ -20,9 +20,9 @@ Purpose: reconciling and uploading data to Wikibases of the KB, using Openfine
 * PROD: http://www.localhost:8835 (internal, formal PRODuction query service)
 
 ### Reconcilation services (for OpenRefine)
-* TEST: http://www.localhost:8003 // http://www.localhost:8003/en/api  (internal, formal TEST recon service)
-* ACC : http://www.localhost:8002 // http://www.localhost:8002/en/api (internal, formal ACCeptance recon service)
-* PROD: http://www.localhost:8001 // http://www.localhost:8001/en/api (internal, formal PRODuction recon service)
+* TEST: http://www.localhost:8003 // http://www.localhost:8003/nl/api  (internal, formal TEST recon service)
+* ACC : http://www.localhost:8002 // http://www.localhost:8002/nl/api (internal, formal ACCeptance recon service)
+* PROD: http://www.localhost:8001 // http://www.localhost:8001/nl/api (internal, formal PRODuction recon service)
 
 ===================================================
 
