@@ -50,10 +50,10 @@ Once you have a working reconciliation service for your Wikibase instance, you c
 
 **KB specific**
 * A (basic) manifest for connecting OpenRefine to https://kbtestwikibase.wikibase.cloud is available on [kb-test-wikibase-cloud-manifest.json](kb-test-wikibase-cloud-manifest.json).
-* For making this work for other WB instances, change *https://kbtestwikibase.wikibase.cloud* into the URL of the specific KB Wikibase you are dealing with, and don't forget to specify the base URL of the KB reconcilation service.
+* For making this work for other WB instances, change *https://kbtestwikibase.wikibase.cloud* into the URL of the specific KB Wikibase you are dealing with, and don't forget to specify the base URL of the relevant KB reconcilation service.
   * TEST: [localhost-test-manifest.json](localhost-test-manifest.json) is the (basic) manifest for connecting OpenRefine to the KB TEST WB at http://www.localhost:84 and the TEST recon service at http://www.localhost:8003
   * ACC: [localhost-acc-manifest.json](localhost-acc-manifest.json) is the (basic) manifest for connecting OpenRefine to the KB ACC WB at http://www.localhost:83 and the ACC recon service at http://www.localhost:8002
-  * PROD: [localhost-prod-manifest.json](localhost-prod-manifest.json) is the (basic) manifest for connecting OpenRefine to the KB PROD WB at http://www.localhost:82 and the ACC recon service at http://www.localhost:8001
+  * PROD: [localhost-prod-manifest.json](localhost-prod-manifest.json) is the (basic) manifest for connecting OpenRefine to the KB PROD WB at http://www.localhost:82 and the PROD recon service at http://www.localhost:8001
 
 ## Configuration of your Wikibase instance
 
