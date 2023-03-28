@@ -1,7 +1,7 @@
 # OpenRefine-Wikibase
 Files for interaction between OpenRefine and KB Wikibases. 
 
-*Latest update: 22-03-2023*
+*Latest update: 28-03-2023*
 
 Purpose: reconciling and uploading data to Wikibases of the KB, using Openfine 
 
@@ -9,9 +9,9 @@ Purpose: reconciling and uploading data to Wikibases of the KB, using Openfine
 
 ### Wikibase instances
 * SAND: https://kbtestwikibase.wikibase.cloud/wiki/Main_Page (non-official sandbox/prototyping WB instance, not part of the KB IT infrastructure)
-* TEST: http://www.localhost:84 (internal, formal TEST WB instance, part of the IT-infra of the KB)
-* ACC : http://www.localhost:83 (internal, formal ACCeptance WB instance, part of the IT-infra of the KB)
-* PROD: http://www.localhost:82 (internal, formal PRODuction WB instance, part of the IT-infra of the KB)
+* TEST: http://www.localhost:8084 (internal, formal TEST WB instance, part of the IT-infra of the KB)
+* ACC : http://www.localhost:8083 (internal, formal ACCeptance WB instance, part of the IT-infra of the KB)
+* PROD: http://www.localhost:8082 (internal, formal PRODuction WB instance, part of the IT-infra of the KB)
 
 ### SPARQL query services
 * SAND: https://kbtestwikibase.wikibase.cloud/query/ (non-official sandbox/prototyping WB query service, not part of the KB IT infrastructure)
@@ -38,8 +38,8 @@ Purpose: reconciling and uploading data to Wikibases of the KB, using Openfine
   * This will expose the recon service at http://localhost:8000 (as specified in the *this_host* parameter).
   * This file has been succesfully tested with a service run on a local Windows10 machine. See [these two](https://twitter.com/ookgezellig/status/1569720757009403905) [tweets](https://twitter.com/ookgezellig/status/1569732763678277638). 
 * For making this work for other WB instances, change *https://kbtestwikibase.wikibase.cloud* into the URL of the specific KB Wikibase you are dealing with, and don't forget to change the *this_host*, *wikibase_name*, the *fallback_image_url* and other relevent parameters accordingly.
-  * [localhost-test-config.py](localhost-test-config.py) is the custom configuration file for the TEST WB at http://www.localhost:84. This file must be renamed to config.py when used in the actual Docker setup.
-  * Extensions [UniversalLanguageSelector](https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:UniversalLanguageSelector) and [CirrusSearch](https://www.mediawiki.org/wiki/Extension:CirrusSearch) are enabled in this Wikibase, see http://www.localhost:84/wiki/Special:Version (and http://www.localhost:83/wiki/Special:Version)
+  * [localhost-test-config.py](localhost-test-config.py) is the custom configuration file for the TEST WB at http://www.localhost:8084. This file must be renamed to config.py when used in the actual Docker setup.
+  * Extensions [UniversalLanguageSelector](https://www.mediawiki.org/wiki/Special:MyLanguage/Extension:UniversalLanguageSelector) and [CirrusSearch](https://www.mediawiki.org/wiki/Extension:CirrusSearch) are enabled in this Wikibase, see http://www.localhost:8084/wiki/Special:Version (and http://www.localhost:8083/wiki/Special:Version)
 
 ## Connecting OpenRefine to your Wikibase instance
 Once you have a working reconciliation service for your Wikibase instance, you can connect OpenRefine to it. All you need is a so-called manifest for that instance, which provides some metadata and links required for the connection to work.
@@ -51,9 +51,9 @@ Once you have a working reconciliation service for your Wikibase instance, you c
 **KB specific**
 * A (basic) manifest for connecting OpenRefine to https://kbtestwikibase.wikibase.cloud is available on [kb-test-wikibase-cloud-manifest.json](kb-test-wikibase-cloud-manifest.json).
 * For making this work for other WB instances, change *https://kbtestwikibase.wikibase.cloud* into the URL of the specific KB Wikibase you are dealing with, and don't forget to specify the base URL of the relevant KB reconcilation service.
-  * TEST: [localhost-test-manifest.json](localhost-test-manifest.json) ([raw](https://raw.githubusercontent.com/KBNLresearch/OpenRefine-Wikibase/main/localhost-test-manifest.json)) is the (basic) manifest for connecting OpenRefine to the KB TEST WB at http://www.localhost:84 and the TEST recon service at http://www.localhost:8003
-  * ACC: [localhost-acc-manifest.json](localhost-acc-manifest.json) ([raw](https://raw.githubusercontent.com/KBNLresearch/OpenRefine-Wikibase/main/localhost-acc-manifest.json)) is the (basic) manifest for connecting OpenRefine to the KB ACC WB at http://www.localhost:83 and the ACC recon service at http://www.localhost:8002
-  * PROD: [localhost-prod-manifest.json](localhost-prod-manifest.json) ([raw](https://raw.githubusercontent.com/KBNLresearch/OpenRefine-Wikibase/main/localhost-prod-manifest.json)) is the (basic) manifest for connecting OpenRefine to the KB PROD WB at http://www.localhost:82 and the PROD recon service at http://www.localhost:8001
+  * TEST: [localhost-test-manifest.json](localhost-test-manifest.json) ([raw](https://raw.githubusercontent.com/KBNLresearch/OpenRefine-Wikibase/main/localhost-test-manifest.json)) is the (basic) manifest for connecting OpenRefine to the KB TEST WB at http://www.localhost:8084 and the TEST recon service at http://www.localhost:8003
+  * ACC: [localhost-acc-manifest.json](localhost-acc-manifest.json) ([raw](https://raw.githubusercontent.com/KBNLresearch/OpenRefine-Wikibase/main/localhost-acc-manifest.json)) is the (basic) manifest for connecting OpenRefine to the KB ACC WB at http://www.localhost:8083 and the ACC recon service at http://www.localhost:8002
+  * PROD: [localhost-prod-manifest.json](localhost-prod-manifest.json) ([raw](https://raw.githubusercontent.com/KBNLresearch/OpenRefine-Wikibase/main/localhost-prod-manifest.json)) is the (basic) manifest for connecting OpenRefine to the KB PROD WB at http://www.localhost:8082 and the PROD recon service at http://www.localhost:8001
 
 ## Configuration of your Wikibase instance
 
