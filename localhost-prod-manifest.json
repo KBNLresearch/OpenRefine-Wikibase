@@ -2,12 +2,12 @@
   "version": "1.0",
   "mediawiki": {
     "name": "KB PRODuction Wikibase",
-    "root": "http://localhost:82/wiki/",
-    "main_page": "http://localhost:82/wiki/Main_Page",
-    "api": "http://localhost:82/w/api.php"
+    "root": "http://localhost:8082/wiki/",
+    "main_page": "http://localhost:8082/wiki/Main_Page",
+    "api": "http://localhost:8082/w/api.php"
   },
   "wikibase": {
-    "site_iri": "http://localhost:82/entity/",
+    "site_iri": "http://localhost:8082/entity/",
     "maxlag": 5,
     "max_edits_per_minute": 60,
     "tag": "openrefine-${version}",
@@ -17,16 +17,16 @@
     }
   },
   "oauth": {
-    "registration_page": "http://localhost:82/wiki/Special:OAuthConsumerRegistration/propose"
+    "registration_page": "http://localhost:8082/wiki/Special:OAuthConsumerRegistration/propose"
   },
   "reconciliation": {
     "endpoint": "http://localhost:8001/${lang}/api"
   },
   "entity_types": {
     "item": {
-      "site_iri": "http://localhost:82/entity/",
+      "site_iri": "http://localhost:8082/entity/",
       "reconciliation_endpoint": "http://localhost:8001/${lang}/api",
-      "mediawiki_api": "http://localhost:82/w/api.php"
+      "mediawiki_api": "http://localhost:8082/w/api.php"
     }
   }
 }
