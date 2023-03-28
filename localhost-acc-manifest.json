@@ -3,7 +3,7 @@
   "mediawiki": {
     "name": "KB ACCeptatie Wikibase",
     "root": "http://localhost:8083/wiki/",
-    "main_page": "http://localhost:83/wiki/Main_Page",
+    "main_page": "http://localhost:8083/wiki/Main_Page",
     "api": "http://localhost:8083/w/api.php"
   },
   "wikibase": {
@@ -17,7 +17,7 @@
     }
   },
   "oauth": {
-    "registration_page": "http://localhost:83/wiki/Special:OAuthConsumerRegistration/propose"
+    "registration_page": "http://localhost:8083/wiki/Special:OAuthConsumerRegistration/propose"
   },
   "reconciliation": {
     "endpoint": "http://localhost:8002/${lang}/api"
