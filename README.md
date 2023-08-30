@@ -1,4 +1,4 @@
-# OpenRefine-Wikibase
+# OpenRefine-KB-Wikibase
 Files for interaction between OpenRefine and KB Wikibases. 
 
 *Latest update: 30-08-2023*
