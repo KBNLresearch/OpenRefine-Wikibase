@@ -2,12 +2,12 @@
   "version": "1.0",
   "mediawiki": {
     "name": "KB TEST Wikibase",
-    "root": "http://localhost:8084/wiki/",
-    "main_page": "http://localhost:8084/wiki/Main_Page",
-    "api": "http://localhost:8084/w/api.php"
+    "root": "https://test.emma.zbkb.nl/wiki/",
+    "main_page": "https://test.emma.zbkb.nl/wiki/Main_Page",
+    "api": "https://test.emma.zbkb.nl/w/api.php"
   },
   "wikibase": {
-    "site_iri": "http://localhost:8084/entity/",
+    "site_iri": "https://test.emma.zbkb.nl/entity/",
     "maxlag": 5,
     "max_edits_per_minute": 60,
     "tag": "openrefine-${version}",
@@ -17,16 +17,16 @@
     }
   },
   "oauth": {
-    "registration_page": "http://localhost:8084/wiki/Special:OAuthConsumerRegistration/propose"
+    "registration_page": "https://test.emma.zbkb.nl/wiki/Special:OAuthConsumerRegistration/propose"
   },
   "reconciliation": {
-    "endpoint": "http://localhost:8003/${lang}/api"
+    "endpoint": "https://test.emma.zbkb.nl/recon/${lang}/api"
   },
   "entity_types": {
     "item": {
-      "site_iri": "http://localhost:8084/entity/",
-      "reconciliation_endpoint": "http://localhost:8003/${lang}/api",
-      "mediawiki_api": "http://localhost:8084/w/api.php"
+      "site_iri": "https://test.emma.zbkb.nl/entity/",
+      "reconciliation_endpoint": "https://test.emma.zbkb.nl/recon/${lang}/api",
+      "mediawiki_api": "https://test.emma.zbkb.nl/w/api.php"
     }
   }
 }
