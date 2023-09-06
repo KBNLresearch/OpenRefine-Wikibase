@@ -1,9 +1,9 @@
 # OpenRefine-KB-Wikibase
 Files for interaction between OpenRefine and KB Wikibases. 
 
-*Latest update: 30-08-2023*
-
 Purpose: reconciling and uploading data to Wikibases of the KB, using Openfine 
+
+*Latest update: 30-08-2023*
 
 ## KB Wikibase services overview
 
